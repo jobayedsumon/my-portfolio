@@ -306,12 +306,7 @@ input:focus{
 	z-index: 1;
 	margin: 37px 0;
 }
-/*.logo {*/
-/*    margin-top: 3px;*/
-/*}*/
-/*.logo img {*/
-/*    margin-top: 7px;*/
-/*}*/
+
 .main-menu ul li {
     display: inline-block;
     margin: 0 17px;
