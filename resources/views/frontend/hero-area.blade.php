@@ -1,6 +1,6 @@
 <!-- hero area start -->
 <section>
-    <div class="hero-area" style="background-image: url(uploads/home_bg.jpg)">
+    <div class="hero-area" style="background-image: url(storage/uploads/home_bg.jpg)">
         <div id="particles-js"></div>
         <div class="container">
             <div class="row">
@@ -14,34 +14,29 @@
                                 <h1 class="cd-headline clip is-full-width">
                                         <span class="cd-words-wrapper">
 
-
-                                            <b class="is-visible">Grapics Designer</b>
-
+                                            <b class="is-visible">Software Engineer</b>
 
                                             <b>Web Developer</b>
 
-
                                             <b>Laravel Developer</b>
-
-
-                                            <b>UI/UX Designer</b>
-
 
                                             <b>Frontend Developer</b>
 
-                                                                                    </span>
+                                            <b>Backend Developer</b>
+
+                                        </span>
                                 </h1>
                             </div>
                             <div class="hero-social-link">
 
 
-                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/jobaedsumon" target="_blank"><i class="fab fa-facebook"></i></a>
 
-                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/jobayedsumon" target="_blank"><i class="fab fa-linkedin"></i></a>
 
-                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/jobayedsumon" target="_blank"><i class="fab fa-instagram"></i></a>
 
-                                <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                                <a href="https://github.com/jobayedsumon" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <a href="#about">

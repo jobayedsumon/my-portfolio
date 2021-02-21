@@ -6,15 +6,15 @@
   Version: 1.0
   */
 
-/* CSS Index 
+/* CSS Index
 -----------------------------------
 1. Theme default css
 2. header
 3. Hero
 4. About
 5. Service
-6. portfolio 
-7. Testimonials 
+6. portfolio
+7. Testimonials
 8. Blog
 9. Subscriber
 10. Contact
@@ -306,12 +306,12 @@ input:focus{
 	z-index: 1;
 	margin: 37px 0;
 }
-.logo {
-    margin-top: 3px;
-}
-.logo img {
-    margin-top: 7px;
-}
+/*.logo {*/
+/*    margin-top: 3px;*/
+/*}*/
+/*.logo img {*/
+/*    margin-top: 7px;*/
+/*}*/
 .main-menu ul li {
     display: inline-block;
     margin: 0 17px;
@@ -411,12 +411,12 @@ input:focus{
     box-shadow: #000000 2px 2px 3px, #4d4d4d -1px -1px 3px;
     border-radius: 50px;
 
-    
+
 }
 .hero-social-link a i{
     height: 30px;
     width: 30px;
-    
+
 }
 .animation-mouse {
     border: 2px solid #fff;
@@ -482,7 +482,7 @@ input:focus{
     top: 20%;
 }
 .content a {
-    
+
     background: transparent;
     box-shadow: #000000 5px 5px 15px, #4d4d4d -5px -5px 15px;
     padding: 15px 36px;
@@ -497,14 +497,14 @@ input:focus{
 .content a:hover {
     color: #fff;
     background: linear-gradient(145deg, #292929, #222222);
-    box-shadow:  7px 7px 15px #0f0f0f, 
+    box-shadow:  7px 7px 15px #0f0f0f,
     -7px -7px 15px #3d3d3d;
 }
 .about-hero-img img {
 	width: 100%;
 	border-radius: 15px;
 	height: 32rem;
-   
+
 }
 .skills-head-type h1 {
     font-weight: 600;
@@ -532,7 +532,7 @@ input:focus{
 }
 
 .progress-bar {
- 
+
     background: linear-gradient(to left, #660033 0%, #070420 30%);
 }
 .progressbar-label h5 span {
@@ -598,7 +598,7 @@ input:focus{
     right: 0;
     top: 0;
     bottom: 0;
-    
+
 }
 .service-head-title h1 {
     color: #fff;
@@ -668,7 +668,7 @@ input:focus{
 	color: #fff;
 	background: #262626;
     box-shadow: #000000 2px 2px 8px,#4d4d4d -2px -2px 8px;
-    
+
 }
 .portfolio{
 	position: relative;
@@ -758,7 +758,7 @@ input:focus{
     right: 0;
     top: 0;
     bottom: 0;
-    
+
 }
 .testimonials-main-content {
     cursor: e-resize;
@@ -946,12 +946,12 @@ input{
   font-size: 16px;
   font-weight: 500;
   } /* Chrome, Firefox, Opera*/
-  :-ms-input-placeholder.form-control { 
+  :-ms-input-placeholder.form-control {
    color: #8A9197;
    font-size: 16px;
-   font-weight: 500; 
+   font-weight: 500;
    }  /* Internet Explorer*/
-   .form-control::-ms-input-placeholder { 
+   .form-control::-ms-input-placeholder {
        color: #6c757d;
        font-size: 16px;
        font-weight: 500;
@@ -963,7 +963,7 @@ input{
         color: #fff;
         background: #131419;
         box-shadow: #000000 5px 5px 15px, #4d4d4d -5px -5px 15px;
-        
+
         padding: 15px 36px;
         font-size: 18px;
         text-transform: capitalize;
@@ -975,7 +975,7 @@ input{
     .contact-form button:hover {
         color: #fff;
         background: linear-gradient(145deg, #292929, #222222);
-        box-shadow:  7px 7px 15px #0f0f0f, 
+        box-shadow:  7px 7px 15px #0f0f0f,
         -7px -7px 15px #3d3d3d;
     }
 
@@ -993,7 +993,7 @@ input{
         right: 20px;
         transition: all 0.5s;
         display: none;
-        box-shadow:  3px 3px 10px #0f0f0f, 
+        box-shadow:  3px 3px 10px #0f0f0f,
         -3px -3px 10px #3d3d3d;
     }
     .back_top i {
@@ -1008,9 +1008,9 @@ input{
 
     /* 12. Footer */
     .footer-area {
-        
+
         padding: 70px 0px;
-        
+
     }
     .footer-copyright p {
         margin-bottom: 0;
@@ -1025,7 +1025,7 @@ input{
     .social-link ul li a {
         color: #000;
         background: #fff;
-        
+
         border-radius: 30px;
         padding: 11px 14px;
         box-shadow: #000000 3px 3px 6px, #4d4d4d -3px -3px 5px;

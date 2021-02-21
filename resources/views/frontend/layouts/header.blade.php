@@ -2,9 +2,9 @@
     <div class="header-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 align-items-center">
+                <div class="col-lg-2 align-items-center px-0">
                     <div class="logo">
-                        <a href="index.blade.php"><img src="{{ asset('storage/uploads/logo.png') }}" alt=""></a>
+                        <a href="/"><img width="150px" src="{{ asset('storage/uploads/logo.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
