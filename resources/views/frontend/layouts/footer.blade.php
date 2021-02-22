@@ -8,18 +8,18 @@
                         <nav>
                             <ul>
 
-                                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li> <a href="https://www.facebook.com/jobaedsumon" target="_blank"><i class="fab fa-facebook"></i></a></li>
 
-                                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jobayedsumon" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 
-                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li> <a href="https://www.instagram.com/jobayedsumon" target="_blank"><i class="fab fa-instagram"></i></a></li>
 
-                                <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                                <li> <a href="https://github.com/jobayedsumon" target="_blank"><i class="fab fa-github"></i></a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="footer-copyright">
-                        <p>2021 © <a href="index.blade.php"> All Rights Reserved</a>.</p>
+                        <p>{{ date('Y') }} © <a href="/"> All Rights Reserved</a>.</p>
                     </div>
                 </div>
             </div>

@@ -5,103 +5,30 @@
             <div class="col-lg-6 mx-auto">
                 <h1>My Services</h1>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatum exercitationem
-                    necessitatibus nobis maiores.</p>
+                <p>{{ setting('site.service_heading') }}</p>
             </div>
         </div>
         <div class="service-main-content pb-70">
             <div class="container">
                 <div class="row">
+                    @forelse($data['services'] as $service)
                     <div class="col-lg-4">
                         <div class="single-service text-center">
                             <div class="service-border">
                                 <div class="service-img">
-                                    <img class="img-fluid lazy" src="uploads/loader.gif"
-                                         data-src="http://vportfolio.amcoders.xyz/frontend/img/service/4.png"
-                                         alt="frontend/img/service/4.png">
+                                    <img class="img-fluid lazy" src="{{ asset('storage/'. $service->icon) }}"
+                                         data-src="{{ asset('storage/'. $service->icon) }}"
+                                         alt="Web Development">
                                 </div>
                                 <div class="service-content">
-                                    <h4>Google Analytics</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                    <h4>{{ $service->title }}</h4>
+                                    <p>{{ $service->description }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="single-service text-center">
-                            <div class="service-border">
-                                <div class="service-img">
-                                    <img class="img-fluid lazy" src="uploads/loader.gif"
-                                         data-src="http://vportfolio.amcoders.xyz/frontend/img/service/5.png"
-                                         alt="frontend/img/service/5.png">
-                                </div>
-                                <div class="service-content">
-                                    <h4>Digital Marketing</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service text-center">
-                            <div class="service-border">
-                                <div class="service-img">
-                                    <img class="img-fluid lazy" src="uploads/loader.gif"
-                                         data-src="http://vportfolio.amcoders.xyz/frontend/img/service/6.png"
-                                         alt="frontend/img/service/6.png">
-                                </div>
-                                <div class="service-content">
-                                    <h4>Content Managment</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service text-center">
-                            <div class="service-border">
-                                <div class="service-img">
-                                    <img class="img-fluid lazy" src="uploads/loader.gif"
-                                         data-src="http://vportfolio.amcoders.xyz/frontend/img/service/1.png"
-                                         alt="frontend/img/service/1.png">
-                                </div>
-                                <div class="service-content">
-                                    <h4>Web Development</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service text-center">
-                            <div class="service-border">
-                                <div class="service-img">
-                                    <img class="img-fluid lazy" src="uploads/loader.gif"
-                                         data-src="http://vportfolio.amcoders.xyz/frontend/img/service/2.png"
-                                         alt="frontend/img/service/2.png">
-                                </div>
-                                <div class="service-content">
-                                    <h4>Api integration</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service text-center">
-                            <div class="service-border">
-                                <div class="service-img">
-                                    <img class="img-fluid lazy" src="uploads/loader.gif"
-                                         data-src="http://vportfolio.amcoders.xyz/frontend/img/service/3.png"
-                                         alt="frontend/img/service/3.png">
-                                </div>
-                                <div class="service-content">
-                                    <h4>Srarch Engine</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @empty
+                    @endforelse
                 </div>
             </div>
         </div>

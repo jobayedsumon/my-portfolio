@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
 @include('frontend.layouts.header')
 
 @include('frontend.hero-area')
@@ -21,9 +19,6 @@
 @include('frontend.subscriber')
 
 @include('frontend.layouts.footer')
-
-
-
 
 @endsection
 

@@ -9,9 +9,8 @@
                             <h1>ABOUT ME</h1>
                             <span class="span"></span>
                         </div>
-                        <p>My name is Jobayed Sumon, I am web developer from Dhaka, Bangladesh. I have rich experience in
-                            web site design and building and customization, also I am expert at Laravel.</p>
-                        <a href="#" class="btn mt-30">Download CV</a>
+                        <p>{{ setting('site.description') }}</p>
+                        <a href="{{ asset('storage/uploads/JobayedSumon.pdf') }}" class="btn mt-30" download>Download CV</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -27,52 +26,20 @@
                             <h1>My Skills.</h1>
                         </div>
                         <div class="skills-progress-bar">
-                            <div class="single-progress-bar">
-                                <div class="progressbar-label">
-                                    <h5>Html <span class="f-right">95%</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar w-95" role="progressbar" aria-valuenow="95"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-progress-bar">
-                                <div class="progressbar-label">
-                                    <h5>Css <span class="f-right">90%</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar w-90" role="progressbar" aria-valuenow="90"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-progress-bar">
-                                <div class="progressbar-label">
-                                    <h5>Js <span class="f-right">60%</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar w-60" role="progressbar" aria-valuenow="60"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-progress-bar">
-                                <div class="progressbar-label">
-                                    <h5>PHP <span class="f-right">80%</span></h5>
-                                    <div class="progress">
-                                        <div class="progress-bar w-80" role="progressbar" aria-valuenow="80"
-                                             aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
 
+                            @forelse($data['skills'] as $skill)
                             <div class="single-progress-bar">
                                 <div class="progressbar-label">
-                                    <h5>LARAVEL <span class="f-right">80%</span></h5>
+                                    <h5>{{ $skill->name }} <span class="f-right">{{ $skill->percent }}%</span></h5>
                                     <div class="progress">
-                                        <div class="progress-bar w-80" role="progressbar" aria-valuenow="80"
+                                        <div class="progress-bar w-{{ $skill->percent }}" role="progressbar" aria-valuenow="{{ $skill->percent }}"
                                              aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
+                            @empty
+                            @endforelse
+
                         </div>
                     </div>
                 </div>
