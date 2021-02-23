@@ -17,7 +17,7 @@
                             <div class="info mt-3">
                                 <h5>Call Me</h5>
 
-                                <p>{{ setting('site.phone_number') }}</p>
+                                <a class="text-white" href="tel:{{ setting('site.phone_number') }}">{{ setting('site.phone_number') }}</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                             <div class="info mt-3">
                                 <h5>Email Me At</h5>
 
-                                <p>{{ setting('site.email') }}</p>
+                                <a class="text-white" href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a>
                             </div>
                         </div>
                     </div>
