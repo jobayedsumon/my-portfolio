@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontendController::class, 'index']);
+Route::post('/contact', [FrontendController::class, 'contact'])->name('contact');
 
 
 Route::group(['prefix' => 'admin'], function () {

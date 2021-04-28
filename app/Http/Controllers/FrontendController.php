@@ -18,7 +18,7 @@ class FrontendController extends Controller
         $categories = Category::orderBy('priority')->get();
         $portfolios = Portfolio::orderBy('updated_at', 'DESC')->get();
         $services = Service::orderBy('priority')->get();
-        $experiences = Experience::orderBy('date')->get();
+        $experiences = Experience::orderBy('created_at')->get();
 
 
         $data['experiences'] = $experiences;
@@ -28,5 +28,19 @@ class FrontendController extends Controller
         $data['skills'] = $skills;
 
         return view('frontend.index', compact('data'));
+    }
+
+    public function contact(Request $request)
+    {
+        try {
+            if (mail($request->email, $request->subject, $request->message)) {
+                return 'Successfully sent email!';
+            } else {
+                return 'Email sending failed!';
+            }
+
+        } catch (\Exception $exception) {
+            return $exception->getMessage();
+        }
     }
 }

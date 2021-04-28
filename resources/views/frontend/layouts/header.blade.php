@@ -4,13 +4,13 @@
             <div class="row">
                 <div class="col-lg-2 align-items-center px-0">
                     <div class="logo">
-                        <a href="/"><img width="150px" src="{{ asset('storage/uploads/logo.png') }}" alt=""></a>
+                        <a href="/"><img width="200px" src="{{ asset('storage/uploads/logo.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
 
                     <div class="header-btn f-right">
-                        <a target="_blank" href="#" class="btn">Hire Me Now</a>
+                        <a href="#contact" class="btn">Hire Me Now</a>
                     </div>
                     <div class="main-menu f-right">
                         <nav id="mobile-menu">
