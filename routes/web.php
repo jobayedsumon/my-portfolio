@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\FrontendController;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
-
-
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/storage-link', function() {
-  \Artisan::call('storage:link');
+  Artisan::call('storage:link');
   dd('done');
 });
 
 Route::get('/optimize-clear', function() {
-  \Artisan::call('optimize:clear');
+  Artisan::call('optimize:clear');
    dd('done');
 });
 
@@ -31,7 +32,7 @@ Route::get('/test-mail', function() {
           $data = [
           	'message' => 'hello'
           ];
-           \Mail::send('email_view', compact('data'), function ($m) {
+           Mail::send('email_view', compact('data'), function ($m) {
                 $m->from(env('MAIL_FROM_ADDRESS'), 'Jobayed Sumon');
                 $m->to(env('MAIL_TO_ADDRESS'))->subject('Testing...');
             });

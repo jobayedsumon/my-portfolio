@@ -11,5 +11,5 @@
 }
 
 .portfolio img {
-  object-fit: contain !important;
+    object-fit: contain !important;
 }

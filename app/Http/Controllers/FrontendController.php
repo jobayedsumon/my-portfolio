@@ -9,6 +9,7 @@ use App\Models\Service;
 use App\Models\Skill;
 use App\Models\Subscriber;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class FrontendController extends Controller
 {
@@ -40,7 +41,7 @@ class FrontendController extends Controller
             'subject' => $request->subject,
           	'message' => $request->message
           ];
-           \Mail::send('email_view', compact('data'), function ($m) use ($request) {
+           Mail::send('email_view', compact('data'), function ($m) use ($request) {
                 $m->from(env('MAIL_FROM_ADDRESS'), 'Contact');
                 $m->to(env('MAIL_TO_ADDRESS'))->subject($request->subject);
             });
