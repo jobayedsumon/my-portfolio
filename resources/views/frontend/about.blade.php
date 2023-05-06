@@ -10,7 +10,7 @@
                             <span class="span"></span>
                         </div>
                         <p>{{ setting('site.description') }}</p>
-                        <a href="{{ asset('storage/uploads/JobayedSumon.pdf') }}" class="btn mt-30" download>Download CV</a>
+                        <a href="{{ asset('storage/uploads/JobayedSumon_SoftwareEngineer.pdf') }}" class="btn mt-30" download>Download CV</a>
                     </div>
                 </div>
                 <div class="col-lg-4">

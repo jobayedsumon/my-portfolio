@@ -14,15 +14,11 @@
                                 <h1 class="cd-headline clip is-full-width">
                                         <span class="cd-words-wrapper">
 
-                                            <b class="is-visible">Software Engineer</b>
+                                            <b class="is-visible">Laravel Developer</b>
 
-                                            <b>Web Developer</b>
+                                            <b>React Developer</b>
 
-                                            <b>Laravel Developer</b>
-
-                                            <b>Frontend Developer</b>
-
-                                            <b>Backend Developer</b>
+                                            <b>Flutter Developer</b>   
 
                                         </span>
                                 </h1>

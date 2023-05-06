@@ -1,0 +1,15 @@
+.single-service {
+    height: 100%;
+}
+
+.service-img img {
+    width: 100%;
+}
+
+.service-content p {
+    text-align: left;
+}
+
+.portfolio img {
+  object-fit: contain !important;
+}

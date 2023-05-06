@@ -122,7 +122,8 @@ ul {
 	padding: 0px;
 }
 li {
-	list-style: none
+    list-style: disc;
+    color: #fff;
 }
 p {
 	font-size: 14px;

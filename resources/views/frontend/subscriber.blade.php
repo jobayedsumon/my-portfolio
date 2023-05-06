@@ -27,7 +27,7 @@
 
                             </div>
                         </form>
-                        <p class="text-success text-center" id="response"></p>
+                        <p class="text-white text-center" style="font-size: 18px" id="response"></p>
                     </div>
                 </div>
             </div>

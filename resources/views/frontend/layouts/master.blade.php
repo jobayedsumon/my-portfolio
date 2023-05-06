@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="frontend/css/dark.css">
 
     <link rel="stylesheet" href="frontend/css/responsive.css">
+    <link rel="stylesheet" href="frontend/css/custom.css">
 
 
 </head>
@@ -75,6 +76,89 @@
 <script src="frontend/js/jquery.meanmenu.min.js"></script>
 <script src="frontend/js/jquery.smoothscroll.js"></script>
 <script src="frontend/js/main.js"></script>
+
+<script>
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+    (function ($) {
+        "use strict"
+
+        $('#subscribe').on('submit',function(){
+            event.preventDefault();
+			var email = $('#subemail').val();
+          	if(!email) {
+              $('#response').html("Email is required!");
+            } else {
+               $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "{{ route('subscribe') }}",
+                data:{
+                    email: email
+                },
+                success: function(data)
+                {
+                    // show response from the php script.
+                    $('#response').html(data);
+                  	$('#subemail').val("");
+                }
+            })
+                .fail(function(error) {
+                    $('#response').html("Couldn't subscribe!");
+                })
+            }
+           
+        });
+
+
+        // Contact Message send
+        $('#contact').on('submit',function(){
+            event.preventDefault();
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var subject = $('#subject').val();
+            var message = $('#message').val();
+
+            if (!email || !subject || !name) {
+                $('.contact-msg').html('Name, Email, Subject are required!');
+                return;
+            }
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "{{ route('contact') }}",
+                data:{
+                    name: name,
+                    email:email,
+                    subject:subject,
+                    message:message,
+                },
+                success: function(data)
+                {
+                    $('#name').val("");
+                    $('#email').val("");
+                    $('#subject').val("");
+                    $('#message').val("");
+                    // show response from the php script.
+                    $('.contact-msg').html(data);
+
+                }
+            })
+        });
+    })(jQuery);
+
+
+</script>
 
 
 

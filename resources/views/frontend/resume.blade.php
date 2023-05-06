@@ -19,7 +19,7 @@
                                 <i class="{{ $experience->icon }}"></i>
                                 <span>{{ $experience->date }}</span>
                             </div>
-                            <p>{{ $experience->description }}</p>
+                            <p>{!! $experience->description !!}</p>
                         </div>
                     </div>
                 </div>
